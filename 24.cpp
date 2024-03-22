@@ -17,8 +17,9 @@ int main() {
         n = n % fact;
         fact = fact / por;
         por = por - 1;
-        s = s + std::to_string(u);
+        s = s + ":" + std::to_string(u);
     }
+    s.erase(0, 1);
     std::cout << s;
     return 0;
 }
